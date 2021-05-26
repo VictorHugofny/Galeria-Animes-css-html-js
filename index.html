@@ -1,121 +1,72 @@
-<div class="background"> </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+</head>
+<body>
+    <h1>Galeria</h1>
+    <div class = "grid-container">    
 
-<audio controls autoplay>
-    <source src="/mp3/Fullmetal Alchemist Brotherhood Opening 1 - Again Lyrics_160k.mp3" type="audio/mp3">
-  Your browser does not support the audio element.
-  </audio>
-
-<div class = "grid-container">    
-
-<div class = "grid-item">
-    <i>Sempre existem coisas, mais importantes do que sonhos.</i>
-    <img src="./imgs/fullmetalrose.jpg" 
-    alt ="foto de fullmetal" widht = '513' height = '342' title = "fullmetal alchemist">
-</div>
-<div class = "grid-item">
-    <i>Não fique forte para matar alguém que odeia, mas para proteger alguém que ama..</i> 
-    <img src="./imgs/fullmetalestrada.jpg" 
-    alt ="foto de fullmetal" widht = '513' height = '342' title = "fullmetal alchemist">
-</div>
-<div class = "grid-item">
-    <i>O impossível não é impossível. Sua própria existência é a prova disso..</i>  
-    <img src="./imgs/fullmetalatack.jpg" 
-    alt ="foto de fullmetal" widht = '513' height = '342' title = "fullmetal alchemist">
-</div>
-<div class = "grid-item">
-    <i>Ensinamentos obtidos sem sofrimento são desprovidos de valor </i>
-    <img src="./imgs/flores.jpg" 
-    alt ="foto de fullmetal" widht = '513' height = '342' title = "fullmetal alchemist">
-</div>
-<div class = "grid-item">
-    <i>Não é que eu odeie deus.. e sim que se eu fosse até ele , ele iria me expulsar.</i>
-    <img src="./imgs/familia.jpg" 
-    alt ="foto de fullmetal" widht = '513' height = '342' title = "fullmetal alchemist">
-</div>
-<div class = "grid-item">
-    <i>"Nem Deuses ou Demónios como já foi dito antes, nós somos só humanos... insignificante."⁠</i>
-    <img src="./imgs/dog.png" 
-    alt ="foto de fullmetal" widht = '513' height = '342' title = "fullmetal alchemist">
-</div>
-<div class = "grid-item">
-    <i>Você ainda tem pernas para andar, não precisa se agarrar a nada.</i>
-    <img src="./imgs/chuva.jpg" 
-    alt ="foto de fullmetal" widht = '513' height = '342' title = "fullmetal alchemist">
-</div>
-<div class = "grid-item">
-    <i>Sempre existem coisas, mais importantes do que sonhos.</i>
-    <img src="./imgs/Alphonse.png" 
-    alt ="foto de fullmetal" widht = '513' height = '342' title = "fullmetal alchemist">
-</div>
-<div class = "grid-item">
-    <img src="./imgs/ace.png" 
-    alt ="foto de fullmetal" widht = '513' height = '342' title = "fullmetal alchemist">
-</div>
-<div class = "grid-item">
-    <img src="./imgs/7pecados.jpg" 
-    alt ="foto de fullmetal" widht = '513' height = '342' title = "fullmetal alchemist">
-</div>
-
-</div>
+        <div class = "grid-item">
+            <a href ="./paginas/fullmetal.html"> 
+            <img src="/imgs/capa1.jpg" alt ="foto de fullmetal"  widht = '513' height = '342' title = "fullmetal alchemist"></a>
+        </div>
+        <div class = "grid-item">
+            <a href ="./paginas/fullmetal.html"> 
+            <img src="/imgs/capa2.jpg" alt ="foto de fullmetal"  widht = '513' height = '342' title = "fullmetal alchemist"></a>
+        </div>
+        <div class = "grid-item">
+            <a href ="./paginas/fullmetal.html"> 
+            <img src="/imgs/capa3.jpg" alt ="foto de fullmetal"  widht = '513' height = '342' title = "fullmetal alchemist"></a>
+        </div>
+        </div>
 
 <style>
 
-.background{
-    position: fixed;
-    background:white;
-    background-size: 100%;
-    height: 100%;
-    width: 100%;
+*{
+    margin: 0;
+    overflow: hidden;
+}
+.grid-container{
+  display: grid;
+  grid-row-gap: 50px;
+  grid-template-columns: auto auto auto;
+  padding: 100px;
+}
+h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:15px;
+    font-size: 400%;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px rgb(111, 0, 255), 0px 0px 5px rgb(111, 0, 255);
+    text-align: center;
 }
 
+.grid-item {
+    float:left;
+    padding: 1px;
+    text-align: center;
+}
+.grid-item img{
+    border: 10px solid rgba(0, 0, 0, 0.8);
+
+}
 body::-webkit-scrollbar{
     display: none;
 }
-.grid-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-
+body{
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(255, 0, 0, 0.431)),
+    url(/imgs/7a7dcfa6474ec4cbfa81113eebe3c0dc.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position-y:100%;
 }
-.grid-item {
-    position: relative;
-    transition: background 0.5s;
-    background: black;
-    padding: 150px;
-    flex: 1 1 20%;
-    color: aqua;
-    overflow-x:hidden;
-}
-.grid-item img{
-    opacity : 0.3;
-    box-shadow: rgb(0, 0, 0) 0px 0px 500px;
-    position: relative;
-    left:50%;
-    transition: 1s;
-    transform:translate(-50%, -10%);
-    z-index: 1;
-    width: 400px;
-    right: 160px;
-}
-.grid-item:hover{
-    background:transparent;
-}
-.grid-item:hover > img{
-    opacity: 1;
-}
-.grid-item i {
-    margin: 10px;
-    position: absolute;
-    bottom:10px;
-    left:50%;
-    text-align: center;
-    font-size: 200%;
-    color:black;
-    z-index: 2;
-}
-*{
-    margin: 0;
-}
-
 </style>
+</body>
+</html>
