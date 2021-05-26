@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria</title>
+    <link rel="icon" type="image/png" href="./imgs/ace.png"/>
 </head>
 <body>
     <h1>Galeria</h1>
@@ -15,11 +16,11 @@
             <img src="./imgs/capa1.jpg" alt ="foto de fullmetal"  widht = '513' height = '342' title = "fullmetal alchemist"></a>
         </div>
         <div class = "grid-item">
-            <a href ="./paginas/fullmetal.html"> 
+            <a href ="./paginas/deathnote.html"> 
             <img src="./imgs/capa2.jpg" alt ="foto de fullmetal"  widht = '513' height = '342' title = "fullmetal alchemist"></a>
         </div>
         <div class = "grid-item">
-            <a href ="./paginas/fullmetal.html"> 
+            <a href ="./paginas/atk.html"> 
             <img src="./imgs/capa3.jpg" alt ="foto de fullmetal"  widht = '513' height = '342' title = "fullmetal alchemist"></a>
         </div>
         </div>
@@ -27,14 +28,14 @@
 <style>
 
 *{
-    margin: 0;
-    overflow: hidden;
+    margin:0;
 }
 .grid-container{
-  display: grid;
-  grid-row-gap: 50px;
-  grid-template-columns: auto auto auto;
-  padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px;
+    align-items: center;
+    justify-content: center;
 }
 h1{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -44,17 +45,20 @@ h1{
     top:15px;
     font-size: 400%;
     color: rgb(255, 255, 255);
-    text-shadow: 0px 0px 5px rgb(111, 0, 255), 0px 0px 5px rgb(111, 0, 255);
+    text-shadow: 0px 0px 5px rgba(85, 16, 43,0.5), 0px 0px 5px rgba(85, 16, 43,0.5);
     text-align: center;
 }
 
 .grid-item {
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-left: 25px;
     float:left;
     padding: 1px;
     text-align: center;
 }
 .grid-item img{
-    border: 10px solid rgba(0, 0, 0, 0.8);
+    border: 6px solid rgba(85, 16, 43,0.5);
     position: relative;
     left: 50%;
     transform: translateX(-50%);
